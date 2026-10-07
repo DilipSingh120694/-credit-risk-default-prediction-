@@ -39,7 +39,7 @@ def main():
     assert rows[0]["test_count"] == rows[1]["test_count"] == 5727
     assert rows[0]["tn"] + rows[0]["fp"] == rows[1]["tn"] + rows[1]["fp"]
     assert rows[0]["tp"] + rows[0]["fn"] == rows[1]["tp"] + rows[1]["fn"]
-    path = Path(__file__).resolve().parents[1] / "results" / "confusion-matrix-metrics.csv"
+    path = Path(__file__).resolve().parent / "confusion-matrix-metrics.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(rows[0]))
