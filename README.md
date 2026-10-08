@@ -2,6 +2,8 @@
 **Dilip Singh Rajpurohit | MSc Business Analytics | University of Law**
 
 An academic Python project exploring borrower characteristics associated with loan default and comparing logistic regression with a decision tree classifier.
+## Original Python Analysis
+[View my model-training code and results](credit-risk-original-analysis.ipynb)
 
 ## Business question
 Which borrower characteristics are associated with default, and how well can two interpretable models identify defaulting borrowers?
@@ -18,7 +20,7 @@ The intended audience is a credit risk team investigating potential tools for un
 | Methods | Data cleaning, exploratory analysis, logistic regression, decision tree, independent-samples income t-test |
 | Split reported | 80% training / 20% test |
 | Evidence available here | Eight original figures and a reproducible audit of their confusion-matrix metrics |
-| Original model code | Linked below; its exported notebook and dataset are not included in this repository |
+| Original model code | Linked below; Included in credit-risk-original-analysis.ipynb; the dataset is not included. |
 
 ## Exploratory analysis
 ![Default rates by grade, income distribution, loan-to-income ratio and prior default history](eda-credit-risk.png)
@@ -79,8 +81,7 @@ Requires Python 3.9+; no third-party libraries are needed for the script.
 python audit_metrics.py
 ```
 
-This calculates metrics from transcribed figure counts and writes the CSV in ``. It does not train a classifier or reproduce the income test. To reproduce the original models, export the original Colab notebook as `.ipynb`, add it to ``, and supply the correctly licensed dataset and original environment settings.
-
+This calculates metrics from transcribed figure counts and writes the CSV in ``. It does not train a classifier or reproduce the income test. 
 ## Attribution
 Original analysis and figures: Dilip Singh Rajpurohit, Data Analysis for Business (BS657), report dated 28 May 2026. Portfolio documentation and the supplementary metric audit were prepared with AI assistance; the audit is an addition to the academic work, not the original training code.
 
